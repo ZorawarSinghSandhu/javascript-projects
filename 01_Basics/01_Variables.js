@@ -9,6 +9,8 @@ console.table([accountId, accountName, accountEmail, accountCity]);
 
 console.log(accountState); // outputs "undefined", whether you use "var" or "let", but in case of accountCity, it will throw an error
 
+console.log(typeof accountId); // Or we can write it as console.log(typeof(accountId))
+console.log(typeof(accountEmail));
 
 // let x = 10;
 
