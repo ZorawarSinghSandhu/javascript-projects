@@ -37,7 +37,31 @@
 // anotherFunc()
 
 
-const bigNumber = 123456789128441348923823n; // Use 'n' at the end to convert it from number to bigint, otherwise very large numbers cannot be represented properly. A bigint can represent very large numbers also.
+// const bigNumber = 123456789128441348923823n; // Use 'n' at the end to convert it from number to bigint, otherwise very large numbers cannot be represented properly. A bigint can represent very large numbers also.
 
-console.log(typeof bigNumber);
-console.log(bigNumber);
+// console.log(typeof bigNumber);
+// console.log(bigNumber);
+
+// ************************* Stack and Heap Difference ****************************
+// Stack -> Used for storing primitive data types directly. 
+// Heap -> Used for storing non-primitive data types. However, the reference to the data is stored in a stack.
+
+let myName = "Zorawar";
+let anotherName = myName; 
+
+// One memory slot is allocated for myName, and a second memory slot is allocated for anotherName. Even though both contain the same values. Changing the data in one variable will not affect the data of the other variable, as both variables have one copy each of the data.
+
+anotherName = "Vikram"; //This will only change the value of anotherName, and not myName.
+console.log(myName); //Zorawar
+console.log(anotherName); //Vikram
+
+
+let userOne = {
+    email: "hello@gmail.com"
+}
+
+userTwo = userOne;
+
+userTwo.email = "goodbye@gmail.com";
+console.log(userOne.email); //goodbye
+console.log(userTwo.email); //goodbye
