@@ -55,3 +55,9 @@ console.log(Object.isFrozen(prices)); // To check if an object is frozen
 console.log(Object.isSealed(prices)); // To check if an object is sealed
 
 // Note: freeze() and seal() are shallow. Nested objects can still be modified.
+
+const {email: emailId, name: userName} = youtubeUser
+
+console.log(emailId);
+console.log(userName);
+
