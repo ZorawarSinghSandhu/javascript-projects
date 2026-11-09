@@ -38,7 +38,7 @@ let testUser2 = {
 testUser2.name = "Alex Jones"
 testUser2.email = "alex.jones@gmail.com"
 // testUser2["favourite_places"] = []
-
+    
 console.log(testUser2);
 
 testUser2.greeting = function(){
